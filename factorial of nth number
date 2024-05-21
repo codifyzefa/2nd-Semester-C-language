@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+	int i,n,product;
+	printf("Enter the number : \n");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		product=product*i;
+		printf("the factorial of %d is %d \n",i,product);
+
+	}
+	
+}
