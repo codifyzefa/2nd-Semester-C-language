@@ -1,0 +1,38 @@
+#include<stdio.h>
+int factorial(int x)
+{
+	int i,fact=1;
+	for(i=2;i<=x;i++){
+		fact=fact*i;
+	}
+	return fact;
+}
+int combination(int i,int j){
+
+	int ncr=factorial(i)/(factorial(j)*factorial(i-j));
+	return ncr;
+
+}
+int main()
+{
+	int n;
+	printf("enter the value of n =\n");
+	scanf("%d",&n);
+	//printf("enter the value of r =\n");
+	//scanf("%d",&r);
+
+	for(int i=0;i<=n;i++){
+		for(int j=0;j<=5-i;j++){
+			printf(" ");
+		}
+		for(int k=0;k<=i;k++){
+			int inj=combination(i,k);
+			printf("%d ",inj);
+		}
+	printf("\n");
+	
+	}
+	}
+	
+	
+	
