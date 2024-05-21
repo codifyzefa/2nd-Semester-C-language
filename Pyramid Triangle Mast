@@ -1,0 +1,32 @@
+#include<stdio.h>
+main()
+{
+	int n;
+	scanf("%d",&n);
+	int nst=3,nsp=1;
+	int t=5;
+	for(int i=1;i<=7;i++){
+		printf("*");
+	}
+	printf("\n");
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=nst;j++){
+			printf("*");
+			}
+		for(int k=1;k<=nsp;k++){
+			printf(" ");
+		}
+	
+		for(int j=1;j<=nst;j++){
+			printf("*");
+			
+	}
+	nst--;
+	nsp+=2;
+	t++;
+	
+printf("\n");}
+}
+	
+
+
