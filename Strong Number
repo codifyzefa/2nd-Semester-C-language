@@ -1,0 +1,27 @@
+#include<stdio.h>
+main()
+{
+	int fact,i,num,last_number,ori;
+	printf("enter number : \n");
+	scanf("%d",&num);
+	ori = num;
+	int sum=0;
+	
+	while(num!=0)
+	{
+		last_number=num%10;
+		fact=1;
+		for(i=1;i<=last_number;i++){
+			fact=fact*i;
+		}
+		sum=sum+fact;
+		num=num/10;
+	}
+	if(sum==ori){
+		printf("strong number \n");
+		
+	}
+	else{
+		printf("not a strong number");
+	}
+} 
