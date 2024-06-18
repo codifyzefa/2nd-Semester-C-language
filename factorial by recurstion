@@ -1,0 +1,14 @@
+#include<stdio.h>
+int factorial(int x){
+	int fact=1;
+	if(x==1) return 1;
+	return x*factorial(x-1);
+}
+main()
+{
+	int n;
+	printf("Enter the number \n");
+	scanf("%d",&n);
+	int c=factorial(n);
+	printf("%d",c);
+}
