@@ -1,0 +1,42 @@
+#include<stdio.h>
+main()
+{
+	int nst=5,nsp=1;
+	for(int i=1;i<=5;i++)
+	{
+		for(int j=1;j<=nst;j++)
+		{
+			printf("*");
+		}
+		for(int k=2;k<=nsp;k++)
+		{
+			printf("  ");
+		}
+		for(int z=1;z<=nst;z++)
+		{
+			printf("*");
+		}
+		nst--;
+		nsp++;
+		printf("\n");
+	}
+	int st=1,sp=5;
+	for(int i=1;i<=5;i++)
+	{
+		for(int j=1;j<=st;j++)
+		{
+			printf("*");
+		}
+		for(int k=2;k<=sp;k++)
+		{
+			printf("  ");
+		}
+		for(int z=1;z<=st;z++)
+		{
+			printf("*");
+		}
+		st++;
+		sp--;
+		printf("\n");
+	}
+}
